@@ -1,0 +1,48 @@
+{
+"payins":[
+   {
+      "payinId":"aeeab4bb-4f8a-5890-9451-5da4133ac369",
+      "payinTag":"RECEPTION_82de1263-7903-11ec-9650-c6992779932e|82de1263-7903-11ec-9650-c6992779932e",
+      "walletId":"1226291",
+      "userId":"3",				// (!) In production environment and with SCTR Inst, this is always valued to 3 initially
+      "payinStatus":"VALIDATED",
+      "paymentMethodId":"27",		// corresponds to SCTR Inst
+      "messageToUser":"",
+      "subtotalItems":"",
+      "subtotalServices":"",
+      "subtotalTax":"",
+      "amount":"10.00",
+      "currency":"EUR",
+      "createdDate":"2022-01-19 08:40:54",
+      "walletEventName":"Event_test",
+      "walletAlias":"event-test-61e7cc51e6f4b",
+      "userFirstname":"Alex",
+      "userLastname":"Hond",
+      "codeStatus":"140005",
+      "informationStatus":"",
+      "refundAmount":"",
+      "ibanFullname":"PIERRE XXXXX",
+      "DbtrIBAN":"FR7630003045100002009351319",
+      "ibanBic":"SOGEFRPPXXX",
+      "ibanTxEndToEndId":"82de1248-7903-11ec-9650-c6992779932e",
+      "ibanTxId":"82de1263-7903-11ec-9650-c6992779932e",
+      "forwardUrl":"",
+      "paymentAcceptedUrl":"",
+      "paymentRefusedUrl":"",
+      "paymentWaitingUrl":"",
+      "paymentExceptionUrl":"",
+      "paymentCanceledUrl":"",
+      "payinDate":"",
+      "mandateId":"0",
+      "creditorName":"John Smith",
+      "creditorAddressLine":"99 RUE XXXXXXX PARIS 75003",
+      "creditorCountry":"FR",
+      "creditorIban":"FR7616798000010000122629170",
+      "creditorBIC":"TRZOFR21XXX",
+      "virtualIbanId":"",
+      "virtualIbanReference":"",
+      "additionalData":"",
+      "ibanId":"d3e3e053f08fa2b200971adf2b481cec0c6ab369"
+   }
+]
+}

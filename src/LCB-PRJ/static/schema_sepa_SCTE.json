@@ -1,0 +1,159 @@
+{
+  "payouts":[
+		{
+			"payoutId":"2XX40", 
+			"payoutTag":"25XXXXXXXXXXXXXXXX86f5cb",
+			"payoutStatus":"VALIDATED", 
+			"payoutTypeId":"1", 
+			"payoutType":"Credit Transfer", 
+			"walletId":"85090", 
+			"bankaccountId":"13564", 
+			"label":"Remboursement", 
+			"payoutDate":"2017-10-04",
+			"amount":"1000.00",
+			"currency":"EUR",
+			"partnerFee":"0", 
+			"createdDate":"2017-10-04 09:37:34",
+			"modifiedDate":"2017-10-04 09:55:57", 
+			"walletEventName":"XXXXXXXAB", 
+			"walletAlias":"XXXXXXXXXX", 
+			"userLastname":"",
+			"userFirstname":"",
+			"userId":"636338", 
+			"bankaccountIBAN":"XXXXXXXXXXXXXXXXXXXXXXXX",
+			"codeStatus":"160004", 
+			"informationStatus":"", 
+			"supportingFileLink":""
+		}
+	]
+}
+
+{
+	"payouts":[
+		{
+		"payoutId":"8738690",
+		"payoutTag":"XXXX",
+		"payoutStatus":"PENDING",
+		"payoutTypeId":"1",
+		"payoutType":"Credit Transfer",
+		"walletId":"843904",
+		"bankaccountId":"1555",
+		"beneficiaryId":"1445723",
+		"uniqueMandateReference":null,
+		"label":"",
+		"payoutDate":"0000-00-00",
+		"amount":"100.00",
+		"currency":"EUR",
+		"partnerFee":"0",
+		"createdDate":"2021-04-21 11:36:55",
+		"modifiedDate":"2021-04-21 11:36:55",
+		"walletEventName":"XXXX",
+		"walletAlias":"XXXX",
+		"userLastname":"XXXX",
+		"userFirstname":"XXXX",
+		"userId":"1266475",
+		"bankaccountIBAN":"",
+		"codeStatus":"160011",
+		"informationStatus":"Virement sortant en attente de validation apres alerte car le beneficiaire est dans un pays non membre GAFI",
+		"supportingFileLink":""
+		}
+	]
+}
+
+
+{
+	"payinId":"aeeab4bb-4f8a-5890-9451-5da4133ac369",
+	"payinTag":"RECEPTION_82de1263-7903-11ec-9650-c6992779932e|82de1263-7903-11ec-9650-c6992779932e",
+	"walletId":"1226291",
+	"userId":"3",				// (!) In production environment and with SCTR Inst, this is always valued to 3 initially
+	"payinStatus":"VALIDATED",
+	"paymentMethodId":"27",		// corresponds to SCTR Inst
+	"messageToUser":"",
+	"subtotalItems":"",
+	"subtotalServices":"",
+	"subtotalTax":"",
+	"amount":"10.00",
+	"currency":"EUR",
+	"createdDate":"2022-01-19 08:40:54",
+	"walletEventName":"Event_test",
+	"walletAlias":"event-test-61e7cc51e6f4b",
+	"userFirstname":"Alex",
+	"userLastname":"Hond",
+	"codeStatus":"140005",
+	"informationStatus":"",
+	"refundAmount":"",
+	"ibanFullname":"PIERRE XXXXX",
+	"DbtrIBAN":"FR7630003045100002009351319",
+	"ibanBic":"SOGEFRPPXXX",
+	"ibanTxEndToEndId":"82de1248-7903-11ec-9650-c6992779932e",
+	"ibanTxId":"82de1263-7903-11ec-9650-c6992779932e",
+	"forwardUrl":"",
+	"paymentAcceptedUrl":"",
+	"paymentRefusedUrl":"",
+	"paymentWaitingUrl":"",
+	"paymentExceptionUrl":"",
+	"paymentCanceledUrl":"",
+	"payinDate":"",
+	"mandateId":"0",
+	"creditorName":"John Smith",
+	"creditorAddressLine":"99 RUE XXXXXXX PARIS 75003",
+	"creditorCountry":"FR",
+	"creditorIban":"FR7616798000010000122629170",
+	"creditorBIC":"TRZOFR21XXX",
+	"virtualIbanId":"",
+	"virtualIbanReference":"",
+	"additionalData":"",
+	"ibanId":"d3e3e053f08fa2b200971adf2b481cec0c6ab369"
+}
+
+
+✔ P001 The name of the Originator
+✔ P005 The address of the Originator (only mandatory when the Originator PSP
+or the Beneficiary PSP is located in a non-EEA SEPA country or territory)
+✔ E001 The name of the Beneficiary
+✔ D001 The IBAN of the account of the Originator
+✔ D002 The BIC code of the Originator PSP
+✔ C001 The IBAN of the account of the Beneficiary
+✔ C002 The BIC code of the Beneficiary PSP
+• T001 The identification code of the SEPA electronic credit transfer Scheme
+✔ T002 The amount of the SEPA Credit Transfer in euro
+• T014 The Originator’s reference of the Credit Transfer Transaction
+✔ T051 The Settlement Date of the SEPA Credit Transfer
+• T054 The Originator PSP’s reference number of the SEPA Credit Transfer
+message
+
+
+
+
+
+
+• P001 The name of the Originator
+• P003 The Proxy/Alias of the account of the Originator (Optional)
+• P004 The Originator identification code (Optional)
+• P005 The address of the Originator (only mandatory when the Originator PSP
+or the Beneficiary PSP is located in a non-EEA SEPA country or territory)
+• P006 The name of the Originator Reference Party (Optional)
+• P007 The identification code of the Originator Reference Party (Optional)
+• E001 The name of the Beneficiary
+• E003 The Proxy/Alias of the account of the Beneficiary (Optional)
+• E004 The address of the Beneficiary (Optional)
+• E005 The Beneficiary identification code (Optional)
+• E007 The name of the Beneficiary Reference Party (Optional)
+• E010 The identification code of the Beneficiary Reference Party (Optional)
+• D001 The IBAN of the account of the Originator
+• D002 The BIC code of the Originator PSP
+• C001 The IBAN of the account of the Beneficiary
+• C002 The BIC code of the Beneficiary PSP
+• T001 The identification code of the SEPA electronic credit transfer Scheme
+• T002 The amount of the SEPA Credit Transfer in euro
+• T007 The purpose of the SEPA Credit Transfer (Optional)
+• T008 The category purpose of the SEPA Credit Transfer (Optional)
+• T009 The Remittance Information (Optional)
+• T014 The Originator’s reference of the Credit Transfer Transaction
+• T051 The Settlement Date of the SEPA Credit Transfer
+• T054 The Originator PSP’s reference number of the SEPA Credit Transfer
+message
+
+
+
+

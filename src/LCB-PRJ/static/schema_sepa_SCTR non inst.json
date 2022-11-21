@@ -1,0 +1,47 @@
+{ 
+   "payins": [ 
+      { 
+		"payinId": "12345",
+		"payinTag": null,
+		"walletId": "34567",
+		"userId": "852741",				// <--- in production, this is always valued to 3 initially
+		"payinStatus": "VALIDATED",		// <--- means that the funds are available to the Wallet owner
+		"paymentMethodId": "20",
+		"messageToUser": "Virement vers mon wallet",
+		"subtotalItems": "100.00",
+		"subtotalServices": "0.00",
+		"subtotalTax": "0.00",
+		"amount": "100.00",
+		"currency": "EUR",
+		"createdDate": "2018-01-01 17:00:00",
+		"walletEventName": "Wallet Test",
+		"walletAlias": "test-wallet-abcd",
+		"userFirstname": "CMA",
+		"userLastname": "",
+		"codeStatus": "140005",
+		"informationStatus": "",
+		"refundAmount": null,
+		"ibanFullname": "JEAN DUPONT",
+		"DbtrIBAN": "FR763000401544999999999173",
+		"ibanBic": "BNPAFRPP",
+		"ibanTxEndToEndId": "XXXXXXXXX",
+		"ibanTxId": "180799999990292",
+		"forwardUrl": null,
+		"paymentAcceptedUrl": null,
+		"paymentRefusedUrl": null,
+		"paymentWaitingUrl": null,
+		"paymentExceptionUrl": null,
+		"paymentCanceledUrl": null,
+		"payinDate": null,
+		"mandateId": null,
+		"creditorName": "PAUL DUPONT",	
+		"creditorAddressLine": null,
+		"creditorCountry": null,
+		"creditorIban": "FR761679999999999999011835",
+		"creditorBIC": "TRZOFR21XXX",
+		"virtualIbanId": null,			// <-- added July 6th 2021, provides the ID of the associated Virtual IBAN (if any)
+		"virtualIbanReference": null,	// <-- added July 6th 2021, provides the reference of the associated Virtual IBAN (if any)
+		"ibanId": "995d69d1839999999999a6935979ea8110d8"
+      }
+   ]
+}
