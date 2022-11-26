@@ -132,3 +132,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Simulated Dataset pkl
+simulated-data*
+
+# Training Encoder
+*.joblib
+feature_pipeline.pkl
+
+# Model
+*pth.tar
