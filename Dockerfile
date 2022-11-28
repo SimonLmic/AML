@@ -15,7 +15,8 @@ RUN python -m pip install --upgrade pip \
     && pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.11.0+${IDX}.html \
     && pip install torch-geometric \
     && pip install codecov \
-    && pip install sphinx sphinx_rtd_theme
+    && pip install sphinx sphinx_rtd_theme \
+    && pip install nbconvert==2.0.4
 
 #COPY ./assets /home/runner/assets
 #COPY ./src /home/runner/src
