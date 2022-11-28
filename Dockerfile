@@ -17,5 +17,7 @@ RUN python -m pip install --upgrade pip \
     && pip install codecov \
     && pip install sphinx sphinx_rtd_theme
 
-COPY ./assets /home/runner/assets
-COPY ./src /home/runner/src
+#COPY ./assets /home/runner/assets
+#COPY ./src /home/runner/src
+RUN pip install --upgrade pip ipython ipykernel   
+RUN ipython kernel install --name "python3" --user
