@@ -1,0 +1,26 @@
+name: test_gpu
+on: [push]
+#  workflow_dispatch:
+#  schedule:
+#    - cron: '11 11 * * *'
+jobs:
+  run:
+    runs-on: [self-hosted,gpu]
+    steps:
+      - uses: actions/checkout@v2
+      - name: cml_run
+        env :
+          repo_token: ${{secrets.GITHUB_TOKEN}}
+        run: |
+          pip install nbconvert
+          CODEBLOCK="\`\`\`"
+          #echo $CODEBLOCK > report.md
+          #nvidia-smi >> report.md
+          #echo $CODEBLOCK >> report.md
+          #cml-send-comment report.md
+          chmod +x ./src/LCB-PRJ/scripts/run-fraud-training.sh
+          ./src/LCB-PRJ/scripts/run-fraud-training.sh >> report.md
+          echo '![](./src/LCB-PRJ/models/confusion_matrix.png "Confusion Matrix")' >> report.md
+          cml send-comment report.md
+          cml pr create --merge ./src/LCB-PRJ/test.gexf
+        shell: bash
