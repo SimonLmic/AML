@@ -13,7 +13,12 @@ jobs:
           repo_token: ${{secrets.GITHUB_TOKEN}}
         run: |
           CODEBLOCK="\`\`\`"
-          echo $CODEBLOCK > report.md
-          nvidia-smi >> report.md
-          echo $CODEBLOCK >> report.md
-          cml-send-comment report.md
+          #echo $CODEBLOCK > report.md
+          #nvidia-smi >> report.md
+          #echo $CODEBLOCK >> report.md
+          #cml-send-comment report.md
+          chmod +x ./src/LCB-PRJ/scripts/run-fraud-training.sh
+          ./src/LCB-PRJ/scripts/run-fraud-training.sh >> report.md
+          echo '![](./models/confusion_matrix.png "Confusion Matrix")' >> report.md
+          cml comment create report.md
+        shell: bash
