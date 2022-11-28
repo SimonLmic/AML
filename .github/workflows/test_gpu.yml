@@ -8,8 +8,6 @@ jobs:
     runs-on: [self-hosted,gpu]
     steps:
       - uses: actions/checkout@v2
-        with : 
-          repository: '/home/runner/'
       - name: cml_run
         env :
           repo_token: ${{secrets.GITHUB_TOKEN}}
