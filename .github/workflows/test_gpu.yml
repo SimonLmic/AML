@@ -21,6 +21,9 @@ jobs:
           chmod +x ./src/LCB-PRJ/scripts/run-fraud-training.sh
           ./src/LCB-PRJ/scripts/run-fraud-training.sh >> report.md
           echo '![](./src/LCB-PRJ/models/confusion_matrix.png "Confusion Matrix")' >> report.md
+          echo $CODEBLOCK > report.md
+          cat ./src/LCB-PRJ/models/metrics.txt >> report.md
+          echo $CODEBLOCK >> report.md
           cml send-comment report.md
           cml pr create --merge **/**/*.gexf
         shell: bash
