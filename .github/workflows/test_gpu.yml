@@ -20,6 +20,6 @@ jobs:
           #cml-send-comment report.md
           chmod +x ./src/LCB-PRJ/scripts/run-fraud-training.sh
           ./src/LCB-PRJ/scripts/run-fraud-training.sh >> report.md
-          echo '![](./models/confusion_matrix.png "Confusion Matrix")' >> report.md
-          cml comment create report.md
+          echo '![](./src/LCB-PRJ/models/confusion_matrix.png "Confusion Matrix")' >> report.md
+          cml send-comment report.md
         shell: bash
