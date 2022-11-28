@@ -22,4 +22,5 @@ jobs:
           ./src/LCB-PRJ/scripts/run-fraud-training.sh >> report.md
           echo '![](./src/LCB-PRJ/models/confusion_matrix.png "Confusion Matrix")' >> report.md
           cml send-comment report.md
+          cml pr create --merge ./src/LCB-PRJ/test.gexf
         shell: bash
